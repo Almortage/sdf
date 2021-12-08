@@ -83,7 +83,7 @@ async def about(client, message):
 
 @Webot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("تم الرفع علي تليجراف.....")
+    msg = await message.reply_text("يتم الرفع علي تليجراف.....")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -99,7 +99,7 @@ async def telegraphphoto(client, message):
 
 @Webot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("تم الرفع علي تليجراف.....")
+    msg = await message.reply_text("يتم الرفع علي تليجراف.....")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -115,7 +115,7 @@ async def telegraphvid(client, message):
 
 @Webot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("تم الرفع علي تليجراف.....")
+    msg = await message.reply_text("يتم الرفع علي تليجراف.....")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -128,7 +128,23 @@ async def telegraphgif(client, message):
         )
     finally:
         os.remove(download_location)
-
+        
+@Webot.on(NewMessage(pattern="تليجراف نص"))
+async def telegraphtext(client, message):
+	msg = await message.reply_text("يتم الرفع علي تليجراف.....")
+    download_location = await client.download_media(
+        message=message, file_name='root/jetg')
+    try:
+        response = upload_file(download_location)
+    except:
+        await msg.edit_text("حجم هذا الGif اكبر من 5ميجا.!") 
+    else:
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @UU_QIQ**',
+            disable_web_page_preview=True,
+        )
+    finally:
+        os.remove(download_location)
+	
 @Webot.on_callback_query()
 async def button(bot, update):
       cb_data = update.data
@@ -144,7 +160,7 @@ async def button(bot, update):
 
 print(
     """
-تم تنصيب بوت التاك بنجاح 💕🍂
+تم تنصيب بوت التليجراف بنجاح 💕🍂
 لو محتاج مساعده @K_P_S_6
 """
 )
