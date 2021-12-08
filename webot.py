@@ -19,7 +19,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>مرحبًا ، أنا Telegraph Bot يمكنني تحميل الصور أو مقاطع الفيديو للتلغراف. 
 By : @W_q_Z 
-اضغط على زر المساعدة لمعرفة المزيد حول كيفية استخدامي</b>"""""",   
+اضغط على زر المساعدة لمعرفة المزيد حول كيفية استخدامي</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
