@@ -129,7 +129,7 @@ async def telegraphgif(client, message):
     finally:
         os.remove(download_location)
         
-@Webot.on(NewMessage(pattern="تليجراف نص"))
+@Webot.on_message(filters.message("تليجراف نص"))
 async def telegraphtext(client, message):
 	msg = await message.reply_text("يتم الرفع علي تليجراف.....")
     download_location = await client.download_media(
