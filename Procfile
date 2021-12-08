@@ -1,1 +1,1 @@
-Telbot: python3 Telbot.py
+worker: python3 webot.py
