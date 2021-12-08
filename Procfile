@@ -1,1 +1,1 @@
-xaveir: python3 Telbot.py
+Telbot: python3 Telbot.py
