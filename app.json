@@ -8,8 +8,8 @@
         "Telegram Bot",
         "marten bots"
     ],
-    "repository": "https://github.com/XBOT-MAIN/TeleGraph",
-    "success_url": "https://t.me/UU_QIQ",
+    "repository": "https://github.com/Almortage/sdf",
+    "success_url": "https://t.me/Almortagel_12",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "تــوكــن بـــوتــكـ @BotFather",
