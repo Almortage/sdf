@@ -139,7 +139,7 @@ async def telegraphtext(client, message):
     except:
         await msg.edit_text("حجم هذا الGif اكبر من 5ميجا.!") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @Almortagel_12**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @AlmortagelTech**',
             disable_web_page_preview=True,
         )
     finally:
@@ -161,7 +161,7 @@ async def button(bot, update):
 print(
     """
 تم تنصيب بوت التليجراف بنجاح 💕🍂
-لو محتاج مساعده @hms_01
+لو محتاج مساعده @Almortagel_12
 """
 )
 
