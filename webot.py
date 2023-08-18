@@ -18,17 +18,17 @@ async def start(client, message):
        await Webot.send_message(
                chat_id=message.chat.id,
                text="""<b>مرحبًا ، أنا Telegraph Bot يمكنني تحميل الصور أو مقاطع الفيديو للتلغراف. 
-By : @W_q_Z 
+By : @Almortagel_12 
 اضغط على زر المساعدة لمعرفة المزيد حول كيفية استخدامي</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "كيفيه الاستخدام 🍂💕", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/UU_QIQ")
+                                            "Channel", url="https://t.me/AlmortagelTech")
                                     ],[
                                       InlineKeyboardButton(
-                                            "𝑫𝒆𝒗", url="https://t.me/W_Q_Z")
+                                            "𝑫𝒆𝒗", url="https://t.me/Almortagel_12")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -43,7 +43,7 @@ async def help(client, message):
 
 عشان تستخدام البوت كل الي عليك انك تبعت الصورة او الفيد للبوت وهو هيحملها علي سيرفر التلجراف ويديلك اللينك ، بشرط انها تكون اقل من 5 ميجا 🔰💕
 
-𝒄𝒉 ~ @UU_QIQ </b>""",
+𝒄𝒉 ~ @AlmortagelTech </b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -52,7 +52,7 @@ async def help(client, message):
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "قناه البوت 🍂💕", url="https://t.me/UU_QIQ")
+                                            "قناه البوت 🍂💕", url="https://t.me/AlmortagelTech")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -65,17 +65,17 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>♞ owner:</b> <a href="https://t.me/W_Q_Z">𝙈𝘼𝙍𝙏𝙀𝙉 </a>
+<b>♞ owner:</b> <a href="https://t.me/Almortagel_12">ALMORTAGEL </a>
 
-<b>♞ Support:</b> <a href="https://t.me/UU_QIQ">𝙏𝙄𝙇𝙊𝙍 𝘽𝙊𝙏 </a>
+<b>♞ Support:</b> <a href="https://t.me/AlmortagelTech">ALMORTAGELTECH </a>
 
-<b>~ @UU_QIQ</b>""",
+<b>~ @AlmortagelTech</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "للمزيد من البوتات الخدميه 🍂💕", url="https://t.me/UU_QIQ")
+                                            "للمزيد من البوتات الخدميه 🍂💕", url="https://t.me/AlmortagelTech")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -91,7 +91,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("حجم الصورة اكبر من 5 ميجا !") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @UU_QIQ**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @AlmortagelTech**',
             disable_web_page_preview=True,
         )
     finally:
@@ -107,7 +107,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("حجم الفيديو اكبر من 5ميجا !") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @UU_QIQ**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @AlmortagelTech**',
             disable_web_page_preview=True,
         )
     finally:
@@ -123,7 +123,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("حجم هذا الGif اكبر من 5ميجا.!") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @UU_QIQ**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @AlmortagelTech**',
             disable_web_page_preview=True,
         )
     finally:
@@ -139,7 +139,7 @@ async def telegraphtext(client, message):
     except:
         await msg.edit_text("حجم هذا الGif اكبر من 5ميجا.!") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @UU_QIQ**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @Almortagel_12**',
             disable_web_page_preview=True,
         )
     finally:
@@ -161,7 +161,7 @@ async def button(bot, update):
 print(
     """
 تم تنصيب بوت التليجراف بنجاح 💕🍂
-لو محتاج مساعده @K_P_S_6
+لو محتاج مساعده @hms_01
 """
 )
 
