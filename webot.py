@@ -139,7 +139,7 @@ async def telegraphtext(client, message):
     except:
         await msg.edit_text("حجم هذا الGif اكبر من 5ميجا.!") 
     else:
-        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @AlmortagelTech**',
+        await msg.edit_text(f'**تم الرفع علي تليجراف\n\n https://telegra.ph{response[0]}\n\nJoin @Almortagel_12**',
             disable_web_page_preview=True,
         )
     finally:
